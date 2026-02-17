@@ -3,18 +3,20 @@ import {
   SignedIn,
   SignedOut,
   SignInButton,
+  TaskResetPassword,
   UserButton,
 } from "@clerk/clerk-react";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./HomePage";
+import ResetPassword from "./ResetPassword";
 
 function App() {
   return (
     <>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/forgot-password" element={<ResetPassword />} />
+      </Routes>
     </>
   );
 }

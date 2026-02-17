@@ -1,0 +1,19 @@
+import {
+  SignInButton,
+  UserButton,
+  SignedIn,
+  SignedOut,
+} from "@clerk/clerk-react";
+
+export default function HomePage() {
+  return (
+    <>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+    </>
+  );
+}
