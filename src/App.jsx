@@ -17,7 +17,6 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/forgot-password" element={<ResetPassword />} />
       </Routes>
-      <p>I'm here</p>
     </>
   );
 }
