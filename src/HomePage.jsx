@@ -14,7 +14,7 @@ export default function HomePage() {
       <SignedOut>
         <SignInButton />
       </SignedOut>
-      <p>On the homepage!</p>
+      <p>On the homepage! :)</p>
     </div>
   );
 }
