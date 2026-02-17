@@ -13,10 +13,11 @@ import ResetPassword from "./ResetPassword";
 function App() {
   return (
     <>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/forgot-password" element={<ResetPassword />} />
-      </Routes>
+      </Routes> */}
+      <p>I'm here</p>
     </>
   );
 }
