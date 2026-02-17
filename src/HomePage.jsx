@@ -7,7 +7,7 @@ import {
 
 export default function HomePage() {
   return (
-    <>
+    <div className="">
       <SignedIn>
         <UserButton />
       </SignedIn>
@@ -15,6 +15,6 @@ export default function HomePage() {
         <SignInButton />
       </SignedOut>
       <p>On the homepage!</p>
-    </>
+    </div>
   );
 }
