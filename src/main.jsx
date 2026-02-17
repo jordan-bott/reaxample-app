@@ -14,13 +14,13 @@ if (!PUBLISHABLE_KEY) {
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <ClerkProvider
+    <ClerkProvider
       publishableKey={PUBLISHABLE_KEY}
       taskUrls={{ "reset-password": "/reset-password" }}
     >
-      <BrowserRouter> */}
-    <App />
-    {/* </BrowserRouter>
-    </ClerkProvider> */}
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ClerkProvider>
   </StrictMode>,
 );
